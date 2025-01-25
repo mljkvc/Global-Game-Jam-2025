@@ -1,9 +1,12 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 
 public class FallingObject : MonoBehaviour
 {
     Rigidbody2D rb;
     CircleCollider2D my_collider;
+    public Sprite[] fallingTextures;  // Niz sa različitim teksturama
+    private SpriteRenderer spriteRenderer;
 
     public GameObject bubblePrefab; // Assign your bubble prefab in the inspector
 
@@ -11,6 +14,11 @@ public class FallingObject : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         my_collider = GetComponent<CircleCollider2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
+        // Postavi random teksturu
+        int randomIndex = Random.Range(0, fallingTextures.Length);
+        spriteRenderer.sprite = fallingTextures[randomIndex];
     }
 
     private void OnMouseDown()
