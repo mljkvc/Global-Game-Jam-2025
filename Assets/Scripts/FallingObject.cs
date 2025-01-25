@@ -1,5 +1,4 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 
 public class FallingObject : MonoBehaviour
 {
@@ -38,6 +37,9 @@ public class FallingObject : MonoBehaviour
     {
         if (transform.position.y < -5f || transform.position.y > 5f)
         {
+            if (transform.position.y < -5f) {
+                ArmController.instance.MoveHandDown();
+            }
             Destroy(gameObject);
         }
     }

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 
 public class SnakeMovement : MonoBehaviour
 {
@@ -8,12 +9,21 @@ public class SnakeMovement : MonoBehaviour
 
     private int clickCount = 0;  // Broj klikova na zmiju
     private bool isReversing = false;  // Da li zmija ide unazad
+    float reversingSpeed = 1;
 
     void Start()
     {
         // Postavi zmiju na nasumičnu Y poziciju između -3 i 3
         float randomY = Random.Range(minY, maxY);
         transform.position = new Vector3(transform.position.x, randomY, transform.position.z);
+    }
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.gameObject == ArmController.instance.gameObject)
+        {
+            ArmController.instance.MoveHandDownCobra();
+            isReversing |= true;
+        }
     }
 
     void Update()
@@ -22,6 +32,10 @@ public class SnakeMovement : MonoBehaviour
         {
             // Ako je zmija u režimu povlačenja unazad, pomeri je u suprotnom pravcu (X-osa)
             transform.Translate(Vector3.left * speed * 2 * Time.deltaTime);
+            if(transform.position.x < -6.5f)
+            {
+                Destroy(gameObject);
+            }
         }
         else
         {
