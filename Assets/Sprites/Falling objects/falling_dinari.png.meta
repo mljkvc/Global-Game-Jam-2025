@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      falling_dinari_0: 5471852604437639209
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

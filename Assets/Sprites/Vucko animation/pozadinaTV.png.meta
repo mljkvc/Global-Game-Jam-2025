@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pozadinaTV_0: -5424605282163620024
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
