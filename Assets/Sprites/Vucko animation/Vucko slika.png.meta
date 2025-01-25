@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: aaf7038666895234eb94bdc23eb16b75
+guid: 8632ba97a173f51b3b49f1fbe87b8d2a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 50896866030303577
-    second: bubble_pop_frame_01_0
+      213: -7717450174661515925
+    second: New Project_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bubble_pop_frame_01_0
+      name: New Project_0
       rect:
         serializedVersion: 2
-        x: 69
-        y: 68
-        width: 374
-        height: 376
+        x: 106
+        y: 79
+        width: 1032
+        height: 1003
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 959bae31e62d4b000800000000000000
-      internalID: 50896866030303577
+      spriteID: b65268774fb16e490800000000000000
+      internalID: -7717450174661515925
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bubble_pop_frame_01_0: 50896866030303577
+      New Project_0: -7717450174661515925
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
