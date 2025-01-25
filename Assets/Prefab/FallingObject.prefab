@@ -165,3 +165,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7d58dd3c95b9e4fa893d8021f638f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bubblePrefab: {fileID: 493836188777711124, guid: b9c97ba2b2691a04d918ff5b985c1fef, type: 3}

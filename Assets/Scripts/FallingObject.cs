@@ -5,7 +5,8 @@ public class FallingObject : MonoBehaviour
     Rigidbody2D rb;
     CircleCollider2D my_collider;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public GameObject bubblePrefab; // Assign your bubble prefab in the inspector
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -16,11 +17,20 @@ public class FallingObject : MonoBehaviour
     {
         rb.gravityScale = -0.8f;
         my_collider.sharedMaterial = null;
+
+        // Create the bubble effect
+        if (bubblePrefab != null)
+        {
+            GameObject bubble = Instantiate(bubblePrefab, transform.position, Quaternion.identity);
+            bubble.transform.parent = transform; // Attach to the falling object
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (transform.position.y < -5f || transform.position.y > 5f)
+        {
+            Destroy(gameObject);
+        }
     }
 }
