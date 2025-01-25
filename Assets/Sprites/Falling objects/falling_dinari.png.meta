@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a82ce0c636f4102438b0fba5d5879c9f
+guid: 3a68a32447c5cc41189a6d2a8bb84f94
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6611574454720423463
-    second: cobra_0
+      213: 5471852604437639209
+    second: falling_dinari_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cobra_0
+      name: falling_dinari_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 27
-        width: 300
-        height: 142
+        x: 13
+        y: 41
+        width: 293
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9d997542018fe34a0800000000000000
-      internalID: -6611574454720423463
+      spriteID: 9203dced3fcefeb40800000000000000
+      internalID: 5471852604437639209
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      cobra_0: -6611574454720423463
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
