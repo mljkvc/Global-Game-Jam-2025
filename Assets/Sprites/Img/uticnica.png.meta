@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3a68a32447c5cc41189a6d2a8bb84f94
+guid: cebaa01be7107f090a996736e4590197
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5471852604437639209
-    second: falling_dinari_0
+      213: 2486707920160580168
+    second: uticnica_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 300
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: falling_dinari_0
+      name: uticnica_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 41
-        width: 293
-        height: 140
+        x: 344
+        y: 1601
+        width: 677
+        height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9203dced3fcefeb40800000000000000
-      internalID: 5471852604437639209
+      spriteID: 8426251adaf828220800000000000000
+      internalID: 2486707920160580168
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      falling_dinari_0: 5471852604437639209
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

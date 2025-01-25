@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8817750694770426279}
+  - component: {fileID: 8271823180634623940}
   - component: {fileID: 2568613498273191447}
   - component: {fileID: 1443331233962915522}
   - component: {fileID: 4241629241313745520}
@@ -35,6 +36,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &8271823180634623940
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13097618390002100}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 436d297e912389527842642714b545b5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &2568613498273191447
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -169,4 +192,5 @@ MonoBehaviour:
   - {fileID: 1811728481648282898, guid: c23bc205b2c2c057383627904b886e6f, type: 3}
   - {fileID: 7275060377642507273, guid: 790f663c4a1ff17dfb8fded4e5a7c8f8, type: 3}
   - {fileID: 1735182190602280484, guid: 071ca9b767d80235da9ac217c937e9d9, type: 3}
+  - {fileID: 5471852604437639209, guid: 3a68a32447c5cc41189a6d2a8bb84f94, type: 3}
   bubblePrefab: {fileID: 493836188777711124, guid: b9c97ba2b2691a04d918ff5b985c1fef, type: 3}

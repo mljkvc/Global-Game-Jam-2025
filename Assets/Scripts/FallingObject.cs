@@ -10,11 +10,16 @@ public class FallingObject : MonoBehaviour
 
     public GameObject bubblePrefab; // Assign your bubble prefab in the inspector
 
+    private Animator animator;
+    bool isInBubble = false;
+    private GameObject bubble = null;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         my_collider = GetComponent<CircleCollider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
 
         // Postavi random teksturu
         int randomIndex = Random.Range(0, fallingTextures.Length);
@@ -25,12 +30,20 @@ public class FallingObject : MonoBehaviour
     {
         rb.gravityScale = -0.8f;
         my_collider.sharedMaterial = null;
-
         // Create the bubble effect
-        if (bubblePrefab != null)
+        if (!isInBubble)
         {
-            GameObject bubble = Instantiate(bubblePrefab, transform.position, Quaternion.identity);
+            bubble = Instantiate(bubblePrefab, transform.position, Quaternion.identity);
             bubble.transform.parent = transform; // Attach to the falling object
+            isInBubble = true;
+        }
+        else{
+            //napravi animaciju
+            animator.SetTrigger("Pop"); 
+            rb.gravityScale = 0.8f;
+            isInBubble = false; 
+            Destroy(bubble);
+
         }
     }
 
