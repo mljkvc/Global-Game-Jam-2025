@@ -9,7 +9,7 @@ public class SnakeMovement : MonoBehaviour
 
     private int clickCount = 0;  // Broj klikova na zmiju
     private bool isReversing = false;  // Da li zmija ide unazad
-    float reversingSpeed = 1;
+    
 
     void Start()
     {
@@ -41,6 +41,10 @@ public class SnakeMovement : MonoBehaviour
         {
             // Pomeri zmiju po X osi u desno
             transform.Translate(Vector3.right * speed * Time.deltaTime);
+            if(transform.position.x > 10)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 

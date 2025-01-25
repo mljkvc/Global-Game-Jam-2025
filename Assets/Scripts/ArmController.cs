@@ -7,6 +7,7 @@ public class ArmController : MonoBehaviour
     private Vector3 targetPosition;
     bool flag = false;
     bool flagCobra = false;
+    float startingY;
     public static ArmController instance {
 
         get; private set;
@@ -30,20 +31,29 @@ public class ArmController : MonoBehaviour
     void Start()
     {
         targetPosition = new Vector3(transform.position.x, -1f, transform.position.z);
+        startingY = transform.position.y;
     }
 
     void Update()
     {
         if (flag)
         {
+
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, 12 * -speed * Time.deltaTime);
+            if(transform.position.y < startingY)
+            {
+                transform.position = new Vector3(transform.position.x, startingY, transform.position.z);
+            }
             return;
         }
         if (flagCobra)
            {
                transform.position = Vector3.MoveTowards(transform.position, targetPosition,40 *  -speed * Time.deltaTime);
-
-           }
+            if (transform.position.y < startingY)
+            {
+                transform.position = new Vector3(transform.position.x, startingY, transform.position.z);
+            }
+        }
         else { transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime); }
 
     }

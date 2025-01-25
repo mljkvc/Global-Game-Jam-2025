@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: a82ce0c636f4102438b0fba5d5879c9f
+guid: 8cba0c632d6ed374fa4806019b22ab77
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6611574454720423463
-    second: cobra_0
+      213: -748405778716700894
+    second: grandma (1)_0
+  - first:
+      213: -8433343455658128994
+    second: grandma (1)_1
+  - first:
+      213: -7754050862555207391
+    second: grandma (1)_2
+  - first:
+      213: 5259311780111349725
+    second: grandma (1)_3
+  - first:
+      213: 238577624905786820
+    second: grandma (1)_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cobra_0
+      name: grandma (1)_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 27
-        width: 300
-        height: 142
+        x: 206
+        y: 145
+        width: 475
+        height: 484
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +140,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9d997542018fe34a0800000000000000
-      internalID: -6611574454720423463
+      spriteID: 22fcdb3d8e02d95f0800000000000000
+      internalID: -748405778716700894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandma (1)_1
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 46
+        width: 57
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e99c1a01fceb6fa80800000000000000
+      internalID: -8433343455658128994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandma (1)_2
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 47
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 129e51fb2d3146490800000000000000
+      internalID: -7754050862555207391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandma (1)_3
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 46
+        width: 87
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd77090f234dcf840800000000000000
+      internalID: 5259311780111349725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grandma (1)_4
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 45
+        width: 155
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c5add7f5199f4300800000000000000
+      internalID: 238577624905786820
       vertices: []
       indices: 
       edges: []
@@ -148,7 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cobra_0: -6611574454720423463
+      grandma (1)_0: -748405778716700894
+      grandma (1)_1: -8433343455658128994
+      grandma (1)_2: -7754050862555207391
+      grandma (1)_3: 5259311780111349725
+      grandma (1)_4: 238577624905786820
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

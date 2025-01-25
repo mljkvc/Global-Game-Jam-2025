@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: e10b2a03140ceb76a9a6dc37c65f1ad1
+guid: 9630b0601ab91113b8f3ca2ccccc193e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3420251832985394842
-    second: pinktv_0
-  - first:
-      213: -6451286396335158210
-    second: pinktv_1
+      213: 1295060096609896093
+    second: bubble_pop_frame_02_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pinktv_0
+      name: bubble_pop_frame_02_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 18
-        width: 311
-        height: 174
+        x: 69
+        y: 68
+        width: 374
+        height: 376
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,30 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 661e6844413d880d0800000000000000
-      internalID: -3420251832985394842
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pinktv_1
-      rect:
-        serializedVersion: 2
-        x: 177
-        y: 181
-        width: 24
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e3c0222f33d6876a0800000000000000
-      internalID: -6451286396335158210
+      spriteID: d96473ddb4af8f110800000000000000
+      internalID: 1295060096609896093
       vertices: []
       indices: 
       edges: []
@@ -173,8 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pinktv_0: -3420251832985394842
-      pinktv_1: -6451286396335158210
+      bubble_pop_frame_02_0: 1295060096609896093
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
