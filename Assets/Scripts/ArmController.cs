@@ -15,7 +15,7 @@ public class ArmController : MonoBehaviour
     private bool hasReachedTarget = false; // Zastavica za praćenje kraja igre
 
     public FallingObjectSpawner spawner; // Referenca na FallingObjectSpawner
-
+    public static float LastElapsedTime;
     // Tajmer promenljive
     private float elapsedTime = 0f; // Proteklo vreme igre
     public TMP_Text timerText; // Referenca na UI Text komponentu za prikaz vremena
@@ -145,7 +145,7 @@ public class ArmController : MonoBehaviour
     private void EndGame()
     {
         hasReachedTarget = true; // Zaustavi Update
-
+        LastElapsedTime = elapsedTime;
         // Zaustavi spawning objekata
         if (spawner != null)
         {
@@ -160,6 +160,6 @@ public class ArmController : MonoBehaviour
     IEnumerator DelayAndSwitchScene()
     {
         yield return new WaitForSeconds(2.5f);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(2);
     }
 }

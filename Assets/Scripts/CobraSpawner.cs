@@ -36,7 +36,7 @@ public class CobraSpawner : MonoBehaviour
         float randomY = Random.Range(-2.1f, armY); // Odredjujemo opseg u kojem objekti mogu iskakati
 
         // Pozicija spawn-a sa random X, dok Y pozicija ostaje ista kao Y pozicija Vucko objekta
-        Vector2 spawnPosition = new Vector2(-11f, randomY);
+        Vector2 spawnPosition = new Vector2(-7f, randomY);
 
         // Instantiate prefab na poziciji spawn
         Instantiate(CobraPrefab, spawnPosition, Quaternion.identity);
