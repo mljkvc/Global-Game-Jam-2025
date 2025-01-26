@@ -27,7 +27,7 @@ public class FallingObject : MonoBehaviour
 
     private void OnMouseDown()
     {
-        rb.gravityScale = -0.8f;
+        rb.gravityScale = -0.4f;
         my_collider.sharedMaterial = null;
         // Create the bubble effect
         if (!isInBubble)
@@ -39,7 +39,7 @@ public class FallingObject : MonoBehaviour
         else{
             //napravi animaciju
             animator.SetTrigger("Pop"); 
-            rb.gravityScale = 0.8f;
+            rb.gravityScale = 0.4f;
             isInBubble = false; 
             Destroy(bubble);
 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e9d39835e5e06734abd92cbded0911f7
+guid: fe36c59a79177e050970d2e0dc6a7059
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1146786169504847498
-    second: bakuta_0
+      213: 2003229205410258194
+    second: bakuta05_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bakuta_0
+      name: bakuta05_0
       rect:
         serializedVersion: 2
         x: 63
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a86daaaf1f33aef00800000000000000
-      internalID: 1146786169504847498
+      spriteID: 21d9a284956eccb10800000000000000
+      internalID: 2003229205410258194
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      bakuta_0: 1146786169504847498
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
