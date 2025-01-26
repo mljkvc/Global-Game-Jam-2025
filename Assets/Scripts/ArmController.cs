@@ -30,12 +30,13 @@ public class ArmController : MonoBehaviour
 
     void Start()
     {
-        targetPosition = new Vector3(transform.position.x, -1f, transform.position.z);
+        targetPosition = new Vector3(transform.position.x, -2f, transform.position.z);
         startingY = transform.position.y;
     }
 
     void Update()
     {
+        CheckIfAtTarget();
         if (flag)
         {
 
@@ -54,7 +55,9 @@ public class ArmController : MonoBehaviour
                 transform.position = new Vector3(transform.position.x, startingY, transform.position.z);
             }
         }
-        else { transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime); }
+        else {
+             transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+              }
 
     }
     public void MoveHandDown()
@@ -80,5 +83,12 @@ public class ArmController : MonoBehaviour
         // transform.position -= new Vector3(0, 3f,0);
         Debug.Log(" NAKON HandDown metoda se poziva. Trenutna pozicija: " + transform.position);
 
+    }
+        private void CheckIfAtTarget()
+    {
+        if (Vector3.Distance(transform.position, targetPosition) < 0.01f)
+        {
+            Debug.Log("Kraj! Ruka je stigla do ciljne pozicije: " + targetPosition);
+        }
     }
 }

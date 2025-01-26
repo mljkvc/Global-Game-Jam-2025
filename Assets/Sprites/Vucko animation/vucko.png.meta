@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      vucko_0: -5570446152800144605
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
