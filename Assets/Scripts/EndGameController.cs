@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class EndSceneController : MonoBehaviour
@@ -19,5 +20,10 @@ public class EndSceneController : MonoBehaviour
         }
 
         Debug.Log("Vreme iz prve scene: " + finalTime + " sekundi");
+    }
+
+    public void LoadScene()
+    {
+        SceneManager.LoadScene(2);
     }
 }

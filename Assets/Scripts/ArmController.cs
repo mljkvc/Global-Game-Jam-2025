@@ -14,6 +14,8 @@ public class ArmController : MonoBehaviour
     private float startingY;
     private bool hasReachedTarget = false; // Zastavica za praćenje kraja igre
 
+    public Animator animator;
+
     public FallingObjectSpawner spawner; // Referenca na FallingObjectSpawner
     public static float LastElapsedTime;
     // Tajmer promenljive
@@ -152,6 +154,8 @@ public class ArmController : MonoBehaviour
             spawner.StopSpawning();
         }
         //obfr zovi animaciju
+        animator.SetTrigger("Uticnica"); 
+
         StartCoroutine(DelayAndSwitchScene());
         // Prikazi poruku kraja igre (opciono)
         Debug.Log("Game Over! Ukupno vreme igranja: " + Mathf.FloorToInt(elapsedTime).ToString() + " sekundi.");
@@ -159,6 +163,7 @@ public class ArmController : MonoBehaviour
 
     IEnumerator DelayAndSwitchScene()
     {
+        Debug.Log("jebem si majku");
         yield return new WaitForSeconds(2.5f);
         SceneManager.LoadScene(2);
     }
