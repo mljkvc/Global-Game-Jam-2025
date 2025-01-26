@@ -64,24 +64,16 @@ public class ArmController : MonoBehaviour
     {
         flag = true;
         StartCoroutine(delay());
-        Debug.Log("mikac");
-        // Pomeraj ruku prema dole sa određenom brzinom
-        Debug.Log("HandDown metoda se poziva. Trenutna pozicija: " + transform.position);
 
-       // transform.position -= new Vector3(0, 3f,0);
-        Debug.Log(" NAKON HandDown metoda se poziva. Trenutna pozicija: " + transform.position);
 
     }
     public void MoveHandDownCobra()
     {
         flagCobra = true;
         StartCoroutine(delay());
-        Debug.Log("mikac");
         // Pomeraj ruku prema dole sa određenom brzinom
-        Debug.Log("HandDown metoda se poziva. Trenutna pozicija: " + transform.position);
 
         // transform.position -= new Vector3(0, 3f,0);
-        Debug.Log(" NAKON HandDown metoda se poziva. Trenutna pozicija: " + transform.position);
 
     }
         private void CheckIfAtTarget()

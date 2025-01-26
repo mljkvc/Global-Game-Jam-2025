@@ -14,8 +14,10 @@ public class SnakeMovement : MonoBehaviour
     void Start()
     {
         // Postavi zmiju na nasumičnu Y poziciju između -3 i 3
-        float randomY = Random.Range(minY, maxY);
+        float randomY = Random.Range(minY, ArmController.instance.transform.position.y + 7);
         transform.position = new Vector3(transform.position.x, randomY, transform.position.z);
+
+        Debug.Log($"Spawn Cobra at Y: {randomY}, Arm Y: {ArmController.instance.transform.position.y + 7}");
     }
     private void OnTriggerEnter2D(Collider2D collider)
     {
