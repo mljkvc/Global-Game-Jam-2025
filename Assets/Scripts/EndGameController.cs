@@ -16,7 +16,7 @@ public class EndSceneController : MonoBehaviour
 
         if (timerResultText != null)
         {
-            timerResultText.text = string.Format("Ukupno vreme: {0:D2}:{1:D2}", minutes, seconds);
+            timerResultText.text = string.Format("{0:D2}:{1:D2}", minutes, seconds);
         }
 
         Debug.Log("Vreme iz prve scene: " + finalTime + " sekundi");
@@ -26,4 +26,11 @@ public class EndSceneController : MonoBehaviour
     {
         SceneManager.LoadScene(2);
     }
+
+    public void idiNaStart(){
+
+        SceneManager.LoadScene(0);
+
+    }
+
 }
