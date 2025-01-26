@@ -11,6 +11,8 @@ public class SnakeMovement : MonoBehaviour
     private bool isReversing = false;  // Da li zmija ide unazad
 
     private Animator animator;
+
+    float armPosY;
     
 
     void Start()
@@ -34,6 +36,11 @@ public class SnakeMovement : MonoBehaviour
 
     void Update()
     {
+        armPosY = ArmController.instance.transform.position.y;
+        if(armPosY >= -2.1f)
+        {
+            isReversing = true; 
+        }
         if (isReversing)
         {
             // Ako je zmija u režimu povlačenja unazad, pomeri je u suprotnom pravcu (X-osa)

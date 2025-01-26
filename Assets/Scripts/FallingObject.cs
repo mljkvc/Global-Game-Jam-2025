@@ -12,6 +12,7 @@ public class FallingObject : MonoBehaviour
     private Animator animator;
     bool isInBubble = false;
     private GameObject bubble = null;
+    bool flagg = false; 
 
     void Start()
     {
@@ -27,6 +28,8 @@ public class FallingObject : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (flagg)
+            return;
         rb.gravityScale = -0.4f;
         my_collider.sharedMaterial = null;
         // Create the bubble effect
@@ -48,7 +51,13 @@ public class FallingObject : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.y < -5f || transform.position.y > 5f)
+        if (ArmController.instance.transform.position.y >= -2.1f)
+        {
+            OnMouseDown();
+            flagg = true;
+
+        }
+        if (transform.position.y < -5f || transform.position.y > 5.5f)
         {
             if (transform.position.y < -5f) {
                 ArmController.instance.MoveHandDown();
