@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI; // Za rad sa UI komponentama
+using UnityEngine.SceneManagement;
 
 using TMPro;
 
@@ -140,6 +141,7 @@ public class ArmController : MonoBehaviour
     }
     }
 
+
     private void EndGame()
     {
         hasReachedTarget = true; // Zaustavi Update
@@ -149,8 +151,15 @@ public class ArmController : MonoBehaviour
         {
             spawner.StopSpawning();
         }
-
+        //obfr zovi animaciju
+        StartCoroutine(DelayAndSwitchScene());
         // Prikazi poruku kraja igre (opciono)
         Debug.Log("Game Over! Ukupno vreme igranja: " + Mathf.FloorToInt(elapsedTime).ToString() + " sekundi.");
+    }
+
+    IEnumerator DelayAndSwitchScene()
+    {
+        yield return new WaitForSeconds(2.5f);
+        SceneManager.LoadScene(0);
     }
 }
