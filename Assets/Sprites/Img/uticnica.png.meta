@@ -116,10 +116,10 @@ TextureImporter:
       name: uticnica_0
       rect:
         serializedVersion: 2
-        x: 344
-        y: 1601
-        width: 677
-        height: 248
+        x: 159
+        y: 996
+        width: 862
+        height: 853
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
