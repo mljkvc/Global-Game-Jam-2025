@@ -24,6 +24,9 @@ public class FallingObjectSpawner : MonoBehaviour
         // Ako spawning treba da stane, nemoj instancirati objekte
         if (!isSpawning) return;
 
+        if (ArmController.instance.transform.position.y >= -2.1f)
+            isSpawning = false;
+       
         // Dobijanje pozicije objekta Vucko
         Vector3 vuckoPosition = vucko.transform.position;
 

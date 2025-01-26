@@ -5,7 +5,7 @@ public class CobraSpawner : MonoBehaviour
     public GameObject CobraPrefab; // Prefab objekta koji pada
   // Referenca na objekat Vucko
     public float spawnInterval = 10f; // Interval između spawn-ova
-
+    bool isSpawning = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +18,13 @@ public class CobraSpawner : MonoBehaviour
     void SpawnCobra()
     {
         // Dobijanje pozicije objekta Vucko
+        if (!isSpawning)
+        {
+            return;
+        }
+
+        if(ArmController.instance.transform.position.y >= -2.1f)
+            isSpawning = false; 
 
         float armY = ArmController.instance.transform.position.y + 6f;
         if( armY < -2.2f)
