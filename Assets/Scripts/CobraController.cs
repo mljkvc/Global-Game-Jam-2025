@@ -9,6 +9,8 @@ public class SnakeMovement : MonoBehaviour
 
     private int clickCount = 0;  // Broj klikova na zmiju
     private bool isReversing = false;  // Da li zmija ide unazad
+
+    private Animator animator;
     
 
     void Start()
@@ -17,7 +19,9 @@ public class SnakeMovement : MonoBehaviour
         float randomY = Random.Range(minY, ArmController.instance.transform.position.y + 7);
         transform.position = new Vector3(transform.position.x, randomY, transform.position.z);
 
+
         Debug.Log($"Spawn Cobra at Y: {randomY}, Arm Y: {ArmController.instance.transform.position.y + 7}");
+        animator = GetComponent<Animator>();
     }
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -53,6 +57,9 @@ public class SnakeMovement : MonoBehaviour
     // Ova metoda se poziva svaki put kada klikneš na zmiju
     void OnMouseDown()
     {
+
+        animator.SetTrigger("udarena"); 
+        
         clickCount++;
 
         if (clickCount >= 3)
