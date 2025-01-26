@@ -28,7 +28,7 @@ public class FallingObjectSpawner : MonoBehaviour
         float randomX = Random.Range(-2.2f, 2.2f); // Odredjujemo opseg u kojem objekti mogu iskakati
 
         // Pozicija spawn-a sa random X, dok Y pozicija ostaje ista kao Y pozicija Vucko objekta
-        Vector2 spawnPosition = new Vector2(randomX, vuckoPosition.y);
+        Vector2 spawnPosition = new Vector2(randomX, vuckoPosition.y - 1.69f);
 
         // Instantiate prefab na poziciji spawn
         Instantiate(fallingObjectPrefab, spawnPosition, Quaternion.identity);
