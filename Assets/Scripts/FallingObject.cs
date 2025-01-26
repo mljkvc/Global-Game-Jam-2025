@@ -13,6 +13,7 @@ public class FallingObject : MonoBehaviour
     bool isInBubble = false;
     private GameObject bubble = null;
     bool flagg = false; 
+    bool flag1 = false; 
 
     void Start()
     {
@@ -40,6 +41,8 @@ public class FallingObject : MonoBehaviour
             isInBubble = true;
         }
         else{
+            if (flag1)
+                return;
             //napravi animaciju
             animator.SetTrigger("Pop"); 
             rb.gravityScale = 0.4f;
@@ -53,6 +56,7 @@ public class FallingObject : MonoBehaviour
     {
         if (ArmController.instance.transform.position.y >= -2.1f)
         {
+            flag1 = true;
             OnMouseDown();
             flagg = true;
 
