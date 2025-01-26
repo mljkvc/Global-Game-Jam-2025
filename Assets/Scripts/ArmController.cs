@@ -164,7 +164,7 @@ public class ArmController : MonoBehaviour
     IEnumerator DelayAndSwitchScene()
     {
         Debug.Log("jebem si majku");
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(3.69f);
         SceneManager.LoadScene(2);
     }
 }
